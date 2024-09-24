@@ -119,8 +119,8 @@
                    class="headerlink"
                    title="2018.09-2021.03  辽宁科技大学  控制科学与工程 工学硕士"></a>2018.09-2021.03 辽宁科技大学 控制科学与工程 工学硕士
             </h4>
-            <h4 id="2014-09-2018-06-西北工业大学-计算机科学与技术-工学学士">
-                <a href="#2014-09-2018-06-西北工业大学-计算机科学与技术-工学学士"
+            <h4 id="2014-09-2018-06-燕山大学里仁学院  控制科学与工程  工学学士">
+                <a href="#2014-09-2018-06-燕山大学里仁学院  控制科学与工程  工学学士"
                    class="headerlink"
                    title="2014.09-2018.06  燕山大学里仁学院  控制科学与工程  工学学士"></a>2016.09-2018.06 燕山大学里仁学院 电气工程及其自动化 工学学士
             </h4>
@@ -148,7 +148,7 @@
                 </li>
                 <li>
                     <p>
-                        <strong>熟悉基于物理的渲染（PBR）及阴影、全局光照、光线追踪等领域的工业界主流实时渲染算法原理，了解非真实感渲染（NPR）的基本思路和算法</strong>
+                        <strong>熟悉基于物理的渲染（PBR）及阴影、曲面细分、法线贴图、立方体映射等领域的工业界主流实时渲染算法原理，了解非真实感渲染（NPR）的基本思路和算法</strong>
                     </p>
                 </li>
                 <li>
@@ -188,33 +188,25 @@
                 通过 DeepWorld-自研引擎
                 引擎代码，深入理解了三维数字孪生引擎的层次结构及引擎内部的代码流程，了解了对象序列化、代码反射等游戏引擎代码中常用机制的实现。
             </p>
-            <h3 id="Ray-Tracing-光线追踪渲染器">
-                <a href="#Ray-Tracing-光线追踪渲染器"
+            <h3 id="PB">
+                <a href="#图像后处理效果"
                    class="headerlink"
-                   title="Ray Tracing 光线追踪渲染器"></a>Ray Tracing 光线追踪渲染器
+                   title="图像后处理效果"></a>图像后处理效果
             </h3>
             <p>
-                <i class="fab fa-github"></i>
-                <a target="_blank"
-                   rel="external nofollow noopener noreferrer"
-                   href="https://github.com/LZ328/Ray-Tracing">LZ328/Ray-Tracing: Ray Tracing with C++</a>
-            </p>
-            <p>
-                从零到一实现了离线的光线追踪渲染器，包括基本的材质、纹理，渲染方程的蒙特卡洛求解及重要性采样，运动模糊和散焦模糊效果，场景管理
-                BVH，噪声纹理 Perlin Noise 等算法。
+                熟悉图像后处理算法，高斯模糊、贝索斯算子等，熟练对像素进行操作，实现局部马赛克效果和夜视效果、RGB遮罩等效果。
             </p>
             <div align="center">
-                <img src=" <img src="texture/正常渲染.png" />" />
+                <img src=" <img src="texture/正常渲染.png" />
             </div>
             <div align="center">
-                <img src=" <img src="texture/夜视效果.png" />" />
+                <img src=" <img src="texture/夜视效果.png" />
             </div>
             <div align="center">
-                <img src=" <img src="texture/局部马赛克效果.png" />" />
+                <img src=" <img src="texture/局部马赛克效果.png" />
             </div>
             <p>
-                通过该项目，深入理解了
-                BRDF、渲染方程及对渲染方程的求解优化过程，在具体实现的过程中对光线追踪和算法的工程实现技巧有了更深层的认识。
+                通过参与自研引擎项目，深入理解了BRDF、渲染顺序，多pass通道渲染、环境光遮蔽、平面镜反射等效果。在具体实现的过程中对光线、观察点、渲染目标空间位置的关系计算，以及相关效果实现技巧有了更深层的认识。
             </p>
             <h3 id="CPU-软光栅化渲染器">
                 <a href="#CPU-软光栅化渲染器"
@@ -222,19 +214,11 @@
                    title="CPU 软光栅化渲染器"></a>CPU 软光栅化渲染器
             </h3>
             <p>
-                <i class="fab fa-github"></i>
-                <a target="_blank"
-                   rel="external nofollow noopener noreferrer"
-                   href="https://github.com/LZ328/SoftRenderer">LZ328/SoftRenderer: CPU Soft Renderer</a>
-            </p>
-            <p>
-                从零开始模拟了完整的图形渲染管线，实现了顶点处理、顶点着色、裁剪与剔除、光栅化、抗锯齿、片段着色、深度测试（Early-Z）等渲染管线的核心流程。
+                在引擎开发过程中，通过开发多种效果、熟练掌握了顶点处理、顶点着色、法线计算（三角平面和顶点）、裁剪与剔除、光栅化、模板测试、深度测试等渲染管线的核心流程。
             </p>
             <div align="center">
                 <img src="texture/地形编辑选区.png" />
                 <img src="texture/地形编辑网格.png" />
-                <img src="texture/夜视效果.png" />
-                <img src="texture/夜视效果.png" />
             </div>
             <p>
                 通过该项目，在具体实现过程中加深了对渲染管线各部分的理解，同时掌握了关键算法的具体实现细节。
@@ -269,21 +253,6 @@
             </p>
             <div align="center">
                 <img src="texture/正常渲染.png" />
-            </div>
-            <div align="center">
-                <img src="texture/正常渲染.png" />
-            </div>
-            <div align="center">
-                <img src="texture/正常渲染.png" />
-            </div>
-            <div align="center">
-                <img src="texture/正常渲染.png" />
-            </div>
-            <div align="center">
-                <img src="https://lz328.github.io/LycTechStack.github.io/2022/04/09/20220409-Shader-%E9%AB%98%E7%BA%A7%E5%B1%8F%E5%B9%95%E7%89%B9%E6%95%88/image-20220409170023348.png" />
-            </div>
-            <div align="center">
-                <img src="https://lz328.github.io/LycTechStack.github.io/2022/04/09/20220409-Shader-%E9%9D%9E%E7%9C%9F%E5%AE%9E%E6%84%9F%E6%B8%B2%E6%9F%93/image-20220409192908015.png" />
             </div>
             <div align="center">
                 <img src="texture/地震效果镜头.gif" />
